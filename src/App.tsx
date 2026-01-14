@@ -1,10 +1,17 @@
-import Dashboard from './pages/Dashboard'
-import Checkout from './pages/Checkout'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import Checkout from './pages/Checkout';
 
 function App() {
-  // Checkout 페이지를 보려면 아래 주석을 해제하고 Dashboard를 주석 처리하세요
-  return <Checkout />
-  // return <Dashboard />
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

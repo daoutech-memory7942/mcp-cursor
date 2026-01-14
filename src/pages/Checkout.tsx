@@ -4,7 +4,9 @@ import Search from '../components/Search';
 import Input from '../components/Input';
 import Select from '../components/Select';
 import Checkbox from '../components/Checkbox';
-import Avatar from '../components/Avatar';
+import Sidebar from '../components/dashboard/Sidebar';
+import SearchBar from '../components/dashboard/SearchBar';
+import { useSearch } from '../hooks/useSearch';
 
 export default function Checkout() {
   const [name, setName] = useState('');
@@ -15,6 +17,7 @@ export default function Checkout() {
   const [phone2, setPhone2] = useState('');
   const [phone3, setPhone3] = useState('');
   const [registrationPath, setRegistrationPath] = useState('인터넷');
+  const { searchValue, handleSearch, handleSearchChange } = useSearch();
 
   const handleMemberTypeChange = (type: string, checked: boolean) => {
     if (checked) {
@@ -24,220 +27,28 @@ export default function Checkout() {
     }
   };
 
+  const handleMenuClick = (menuId: string) => {
+    console.log('Menu clicked:', menuId);
+    // 라우팅은 Sidebar 컴포넌트에서 처리됩니다
+  };
+
+  const handleAdminClick = () => {
+    console.log('Admin button clicked');
+  };
+
+  const handleTutorialClick = () => {
+    console.log('Tutorial button clicked');
+  };
+
   return (
     <div
       className="bg-white content-stretch flex items-start justify-center relative size-full min-h-screen"
       data-name="캘린더-page-일정등록"
       data-node-id="7532:504"
     >
-      {/* Sidebar */}
-      <div
-        className="bg-[#08a7bf] content-stretch flex flex-col items-start overflow-clip px-0 py-[20px] relative self-stretch shrink-0 w-[320px]"
-        data-name="gnb"
-        data-node-id="7532:505"
-      >
-        {/* Logo */}
-        <div
-          className="content-stretch flex flex-col items-start px-[24px] py-[12px] relative shrink-0 w-full"
-          data-name="wrap_logo"
-          data-node-id="7532:506"
-        >
-          <div
-            className="h-[26px] overflow-clip relative shrink-0 w-[120px]"
-            data-name="Logo/Signature/horizon"
-            data-node-id="7532:507"
-          >
-            <div
-              className="absolute inset-[20.78%_0_11.84%_30.08%]"
-              data-name="Group"
-              data-node-id="I7532:507;422:74"
-            >
-              <img
-                alt=""
-                className="block max-w-none size-full"
-                src="/images/logo-part1.png"
-              />
-            </div>
-            <div
-              className="absolute inset-[0_78.16%_0_0]"
-              data-name="Group"
-              data-node-id="I7532:507;422:84"
-            >
-              <img
-                alt=""
-                className="block max-w-none size-full"
-                src="/images/logo-part2.png"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Profile */}
-        <div
-          className="content-stretch flex gap-[10px] items-start overflow-clip px-[24px] py-[20px] relative shrink-0 w-full"
-          data-name="wrap_profile"
-          data-node-id="7532:508"
-        >
-          <Avatar
-            className="relative shrink-0 size-[40px]"
-            masterBadge={false}
-            statusBadge={false}
-          />
-          <div
-            className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px overflow-clip relative"
-            data-name="wrap_name"
-            data-node-id="7532:510"
-          >
-            <div
-              className="content-stretch flex items-center relative shrink-0 w-full"
-              data-name="name"
-              data-node-id="7532:511"
-            >
-              <p
-                className="font-medium leading-[1.6] not-italic relative shrink-0 text-white text-[14px]"
-                data-node-id="7532:512"
-              >
-                김다우 사원
-              </p>
-            </div>
-            <div
-              className="content-stretch flex items-center relative shrink-0 w-full"
-              data-name="team"
-              data-node-id="7532:513"
-            >
-              <p
-                className="font-normal leading-[1.5] not-italic relative shrink-0 text-white text-[13px]"
-                data-node-id="7532:514"
-              >
-                애플리케이션디자인팀
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Menu */}
-        <div
-          className="border-[#1298ac] border-solid border-t content-stretch flex flex-col items-start overflow-clip px-0 py-[20px] relative shrink-0 w-full"
-          data-name="wrap_menu"
-          data-node-id="7532:515"
-        >
-          <div
-            className="content-stretch flex gap-[10px] items-center overflow-clip px-[24px] py-[8px] relative shrink-0 w-full"
-            data-name="menu"
-            data-node-id="7532:516"
-          >
-            <div
-              className="relative shrink-0 size-[24px]"
-              data-name="smart-home"
-              data-node-id="7532:517"
-            >
-              <img
-                alt=""
-                className="block max-w-none size-full"
-                src="/images/icon-smart-home.svg"
-              />
-            </div>
-            <p
-              className="font-medium leading-[1.6] not-italic relative shrink-0 text-white text-[14px]"
-              data-node-id="7532:519"
-            >
-              홈
-            </p>
-          </div>
-          <div
-            className="content-stretch flex gap-[10px] items-center overflow-clip px-[24px] py-[8px] relative shrink-0 w-full"
-            data-name="menu"
-            data-node-id="7532:520"
-          >
-            <div
-              className="relative shrink-0 size-[24px]"
-              data-name="folder"
-              data-node-id="7532:521"
-            >
-              <img
-                alt=""
-                className="block max-w-none size-full"
-                src="/images/icon-folder.svg"
-              />
-            </div>
-            <p
-              className="font-medium leading-[1.6] not-italic relative shrink-0 text-white text-[14px]"
-              data-node-id="7532:523"
-            >
-              드라이브
-            </p>
-          </div>
-          <div
-            className="content-stretch flex gap-[10px] items-center overflow-clip px-[24px] py-[8px] relative shrink-0 w-full"
-            data-name="menu"
-            data-node-id="7532:524"
-          >
-            <div
-              className="relative shrink-0 size-[24px]"
-              data-name="layout-grid"
-              data-node-id="7532:525"
-            >
-              <img
-                alt=""
-                className="block max-w-none size-full"
-                src="/images/icon-layout-grid.svg"
-              />
-            </div>
-            <p
-              className="font-medium leading-[1.6] not-italic relative shrink-0 text-white text-[14px]"
-              data-node-id="7532:527"
-            >
-              Works
-            </p>
-          </div>
-          <div
-            className="content-stretch flex gap-[10px] items-center overflow-clip px-[24px] py-[8px] relative shrink-0 w-full"
-            data-name="menu"
-            data-node-id="7532:528"
-          >
-            <div
-              className="relative shrink-0 size-[24px]"
-              data-name="chart-bar"
-              data-node-id="7532:529"
-            >
-              <img
-                alt=""
-                className="block max-w-none size-full"
-                src="/images/icon-chart-bar.svg"
-              />
-            </div>
-            <p
-              className="font-medium leading-[1.6] not-italic relative shrink-0 text-white text-[14px]"
-              data-node-id="7532:531"
-            >
-              설문
-            </p>
-          </div>
-          <div
-            className="content-stretch flex gap-[10px] items-center overflow-clip px-[24px] py-[8px] relative shrink-0 w-full"
-            data-name="menu"
-            data-node-id="7532:532"
-          >
-            <div
-              className="relative shrink-0 size-[24px]"
-              data-name="mail"
-              data-node-id="7532:533"
-            >
-              <img
-                alt=""
-                className="block max-w-none size-full"
-                src="/images/icon-mail.svg"
-              />
-            </div>
-            <p
-              className="font-medium leading-[1.6] not-italic relative shrink-0 text-white text-[14px]"
-              data-node-id="7532:535"
-            >
-              메일
-            </p>
-          </div>
-        </div>
-      </div>
+      <Sidebar
+        onMenuClick={handleMenuClick}
+      />
 
       {/* Main Content */}
       <div
@@ -245,30 +56,13 @@ export default function Checkout() {
         data-name="body"
         data-node-id="7532:536"
       >
-        {/* Search Bar */}
-        <div
-          className="border border-[#d3d6e3] border-solid content-stretch flex items-center justify-between px-[24px] py-[16px] relative shrink-0 w-full"
-          data-name="search"
-          data-node-id="7532:537"
-        >
-          <Search
-            state="normal"
-            className="shrink-0 w-[280px]"
-            placeholder="검색어를 입력해주세요."
-          />
-          <div
-            className="content-stretch flex gap-[10px] items-start overflow-clip relative shrink-0"
-            data-name="wrap_btn"
-            data-node-id="7532:539"
-          >
-            <Button type="normal" state="normal">
-              Admin
-            </Button>
-            <Button type="primary" state="normal">
-              Tutorial
-            </Button>
-          </div>
-        </div>
+        <SearchBar
+          searchValue={searchValue}
+          onSearchChange={handleSearchChange}
+          onSearch={handleSearch}
+          onAdminClick={handleAdminClick}
+          onTutorialClick={handleTutorialClick}
+        />
 
         {/* Form Container */}
         <div

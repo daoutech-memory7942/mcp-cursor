@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Avatar from '../Avatar';
 
 export interface MenuItem {
@@ -17,7 +18,8 @@ export interface SidebarProps {
 }
 
 const defaultMenuItems: MenuItem[] = [
-  { id: 'home', label: '홈', icon: '/images/icon-smart-home.svg' },
+  { id: 'home', label: '홈', icon: '/images/icon-smart-home.svg', path: '/dashboard' },
+  { id: 'checkout', label: '일정등록', icon: '/images/icon-smart-home.svg', path: '/checkout' },
   { id: 'drive', label: '드라이브', icon: '/images/icon-folder.svg' },
   { id: 'works', label: 'Works', icon: '/images/icon-layout-grid.svg' },
   { id: 'survey', label: '설문', icon: '/images/icon-chart-bar.svg' },
@@ -31,7 +33,21 @@ export default function Sidebar({
   activeMenuId,
   onMenuClick,
 }: SidebarProps) {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // 현재 경로에 따라 activeMenuId 자동 설정
+  const currentActiveMenuId = activeMenuId || 
+    menuItems.find(item => item.path === location.pathname)?.id || 
+    'home';
+
   const handleMenuClick = (menuId: string) => {
+    const menuItem = menuItems.find(item => item.id === menuId);
+    
+    if (menuItem?.path) {
+      navigate(menuItem.path);
+    }
+    
     if (onMenuClick) {
       onMenuClick(menuId);
     }
@@ -132,7 +148,7 @@ export default function Sidebar({
           <div
             key={menuItem.id}
             className={`content-stretch flex gap-[10px] items-center overflow-clip px-[24px] py-[8px] relative shrink-0 w-full cursor-pointer transition-colors ${
-              activeMenuId === menuItem.id ? 'bg-[#1298ac]' : 'hover:bg-[#1298ac]/50'
+              currentActiveMenuId === menuItem.id ? 'bg-[#1298ac]' : 'hover:bg-[#1298ac]/50'
             }`}
             data-name="menu"
             data-node-id={`menu-${menuItem.id}`}

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Sidebar from '../components/dashboard/Sidebar';
 import SearchBar from '../components/dashboard/SearchBar';
 import StatCard from '../components/dashboard/StatCard';
@@ -10,12 +9,10 @@ import { useSearch } from '../hooks/useSearch';
 export default function Dashboard() {
   const { stats, news, loading, error, refreshData } = useDashboardData();
   const { searchValue, handleSearch, handleSearchChange } = useSearch();
-  const [activeMenuId, setActiveMenuId] = useState<string>('home');
 
   const handleMenuClick = (menuId: string) => {
-    setActiveMenuId(menuId);
     console.log('Menu clicked:', menuId);
-    // 실제 라우팅 로직을 여기에 구현
+    // 라우팅은 Sidebar 컴포넌트에서 처리됩니다
   };
 
   const handleAdminClick = () => {
@@ -69,7 +66,6 @@ export default function Dashboard() {
       data-node-id="7530:394"
     >
       <Sidebar
-        activeMenuId={activeMenuId}
         onMenuClick={handleMenuClick}
       />
 
