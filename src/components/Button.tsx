@@ -84,12 +84,12 @@ export default function Button({
         return 'h-10 px-4 text-base';
       case 'medium':
       default:
-        return 'h-8 px-3 text-sm';
+        return 'h-[32px] px-[12px] text-[14px]';
     }
   };
 
   // Base classes
-  const baseClasses = `content-stretch flex items-center justify-center overflow-clip py-0 relative rounded-md font-medium leading-[1.6] transition-colors duration-200 ${getSizeClasses()}`;
+  const baseClasses = `content-stretch flex items-center justify-center overflow-clip py-0 relative font-["Pretendard:Medium",sans-serif] leading-[1.6] transition-colors duration-200 ${getSizeClasses()}`;
   
   // Type and state combinations
   const getButtonClasses = () => {
