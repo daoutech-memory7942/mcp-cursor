@@ -19,7 +19,6 @@ export interface SidebarProps {
 
 const defaultMenuItems: MenuItem[] = [
   { id: 'home', label: '홈', icon: '/images/icon-smart-home.svg', path: '/dashboard' },
-  { id: 'checkout', label: '일정등록', icon: '/images/icon-smart-home.svg', path: '/checkout' },
   { id: 'drive', label: '드라이브', icon: '/images/icon-folder.svg' },
   { id: 'works', label: 'Works', icon: '/images/icon-layout-grid.svg' },
   { id: 'survey', label: '설문', icon: '/images/icon-chart-bar.svg' },
