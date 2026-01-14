@@ -37,7 +37,7 @@ export default function SearchBar({
     >
       <Search
         state="normal"
-        className="shrink-0 w-[280px]"
+        className="flex-1"
         placeholder="검색어를 입력해주세요."
         value={searchValue}
         onChange={handleSearchChange}

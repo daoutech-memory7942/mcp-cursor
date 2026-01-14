@@ -17,7 +17,7 @@ export default function NewsCard({
 }: NewsCardProps) {
   return (
     <div
-      className={`bg-white content-stretch flex flex-[1_0_0] flex-col h-[280px] items-start min-h-px min-w-px overflow-clip relative rounded-[12px] ${
+      className={`bg-white content-stretch flex flex-[1_0_0] flex-col h-[280px] items-start min-h-px min-w-px overflow-clip relative ${
         onClick ? 'cursor-pointer hover:shadow-lg transition-shadow' : ''
       } ${className}`}
       data-name="box"
@@ -49,10 +49,10 @@ export default function NewsCard({
         data-name="bottom_btn"
         data-node-id="7531:2242"
       >
-        <p className="font-bold relative shrink-0 text-[18px]" data-node-id="7531:2243">
+        <p className="font-['Pretendard:Bold',sans-serif] relative shrink-0 text-[length:var(--font-size\/heading\/medium,18px)]" data-node-id="7531:2243">
           {title}
         </p>
-        <p className="flex-[1_0_0] font-normal min-h-px min-w-px overflow-hidden relative text-[13px] text-ellipsis w-full whitespace-pre-wrap" data-node-id="7531:2244">
+        <p className="flex-[1_0_0] font-['Pretendard:Regular',sans-serif] min-h-px min-w-px overflow-hidden relative text-[13px] text-ellipsis w-full whitespace-pre-wrap" data-node-id="7531:2244">
           {description}
         </p>
       </div>

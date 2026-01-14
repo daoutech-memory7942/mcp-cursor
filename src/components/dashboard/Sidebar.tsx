@@ -116,7 +116,7 @@ export default function Sidebar({
             data-node-id="7531:1945"
           >
             <p
-              className="font-medium leading-[1.6] not-italic relative shrink-0 text-white text-[14px]"
+              className="font-['Pretendard:Medium',sans-serif] leading-[1.6] not-italic relative shrink-0 text-[color:var(--text\/neutral\/white,white)] text-[length:var(--font-size\/body\/medium,14px)]"
               data-node-id="7531:1946"
             >
               {userName}
@@ -128,7 +128,7 @@ export default function Sidebar({
             data-node-id="7531:1944"
           >
             <p
-              className="font-normal leading-[1.5] not-italic relative shrink-0 text-white text-[13px]"
+              className="font-['Pretendard:Regular',sans-serif] leading-[1.5] not-italic relative shrink-0 text-[color:var(--text\/neutral\/white,white)] text-[length:var(--font-size\/body\/small,13px)]"
               data-node-id="7531:1916"
             >
               {userTeam}
@@ -164,7 +164,8 @@ export default function Sidebar({
               />
             </div>
             <p
-              className="font-medium leading-[1.6] not-italic relative shrink-0 text-white text-[14px]"
+              className="font-['Pretendard:Medium',sans-serif] leading-[1.6] not-italic relative shrink-0 text-[color:var(--text\/neutral\/white,white)] text-[length:var(--font-size\/body\/medium,14px)]"
+              data-node-id={`menu-text-${menuItem.id}`}
             >
               {menuItem.label}
             </p>
