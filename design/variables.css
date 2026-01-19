@@ -1,0 +1,873 @@
+/* Generated CSS Variables - Dynamic Mode Switching Architecture */
+/* Auto-generated from Figma variable collections */
+/* Usage: Set data-theme attribute on container element to switch modes */
+
+/* ========================================= */
+/* FALLBACK VALUES (:root) */
+/* These are default values when no theme is active */
+/* Theme-specific selectors below will override these */
+/* ========================================= */
+
+:root {
+  --light-primary-100: rgb(191, 227, 232);
+  --light-primary-200: rgb(140, 217, 227);
+  --light-primary-300: rgb(92, 207, 222);
+  --light-primary-400: rgb(41, 189, 212);
+  --light-primary-500: rgb(8, 166, 191);
+  --light-primary-600: rgb(5, 143, 166);
+  --light-primary-700: rgb(0, 84, 97);
+  --light-primary-800: rgb(5, 59, 66);
+  --light-primary-900: rgb(10, 38, 43);
+  --light-gray-000: rgb(255, 255, 255);
+  --light-gray-100: rgb(230, 237, 245);
+  --light-gray-200: rgb(201, 214, 224);
+  --light-gray-300: rgb(189, 204, 217);
+  --light-gray-400: rgb(168, 186, 204);
+  --light-gray-500: rgb(138, 158, 179);
+  --light-gray-600: rgb(107, 125, 143);
+  --light-gray-700: rgb(89, 105, 122);
+  --light-gray-800: rgb(66, 77, 89);
+  --light-gray-900: rgb(46, 54, 59);
+  --dark-primary-100: rgb(10, 38, 43);
+  --dark-primary-200: rgb(5, 59, 66);
+  --dark-primary-300: rgb(0, 84, 97);
+  --dark-primary-400: rgb(5, 143, 166);
+  --dark-primary-500: rgb(8, 166, 191);
+  --dark-primary-600: rgb(41, 189, 212);
+  --dark-primary-700: rgb(92, 207, 222);
+  --dark-primary-800: rgb(140, 217, 227);
+  --dark-primary-900: rgb(191, 227, 232);
+  --dark-gray-000: rgb(23, 23, 28);
+  --dark-gray-100: rgb(38, 38, 41);
+  --dark-gray-200: rgb(51, 54, 59);
+  --dark-gray-300: rgb(61, 66, 71);
+  --dark-gray-400: rgb(77, 82, 87);
+  --dark-gray-500: rgb(92, 99, 110);
+  --dark-gray-600: rgb(120, 125, 135);
+  --dark-gray-700: rgb(140, 148, 161);
+  --dark-gray-800: rgb(173, 184, 196);
+  --dark-gray-900: rgb(232, 232, 232);
+  --green-100: rgb(138, 252, 189);
+  --green-200: rgb(69, 232, 140);
+  --green-300: rgb(41, 230, 125);
+  --green-400: rgb(18, 219, 107);
+  --green-500: rgb(3, 199, 89);
+  --green-600: rgb(3, 181, 82);
+  --green-700: rgb(5, 156, 71);
+  --green-800: rgb(0, 125, 56);
+  --green-900: rgb(3, 82, 36);
+  --blue-100: rgb(207, 227, 255);
+  --blue-200: rgb(158, 196, 255);
+  --blue-300: rgb(110, 168, 255);
+  --blue-400: rgb(61, 140, 252);
+  --blue-500: rgb(13, 110, 252);
+  --blue-600: rgb(10, 89, 201);
+  --blue-700: rgb(8, 66, 153);
+  --blue-800: rgb(5, 43, 102);
+  --blue-900: rgb(3, 23, 51);
+  --indigo-100: rgb(224, 207, 252);
+  --indigo-200: rgb(194, 158, 250);
+  --indigo-300: rgb(163, 112, 247);
+  --indigo-400: rgb(133, 64, 245);
+  --indigo-500: rgb(102, 15, 242);
+  --indigo-600: rgb(82, 13, 194);
+  --indigo-700: rgb(61, 10, 145);
+  --indigo-800: rgb(41, 5, 97);
+  --indigo-900: rgb(20, 3, 48);
+  --red-100: rgb(255, 227, 230);
+  --red-200: rgb(242, 173, 181);
+  --red-300: rgb(235, 135, 143);
+  --red-400: rgb(227, 92, 107);
+  --red-500: rgb(219, 54, 69);
+  --red-600: rgb(176, 41, 56);
+  --red-700: rgb(133, 33, 41);
+  --red-800: rgb(89, 20, 28);
+  --red-900: rgb(43, 10, 13);
+  --height-1: 8px;
+  --height-2: 16px;
+  --height-3: 20px;
+  --height-4: 24px;
+  --height-5: 32px;
+  --height-6: 40px;
+  --height-7: 48px;
+  --height-8: 56px;
+  --height-9: 64px;
+  --padding-1: 2px;
+  --padding-2: 4px;
+  --padding-3: 6px;
+  --padding-4: 8px;
+  --padding-5: 12px;
+  --padding-6: 16px;
+  --padding-7: 20px;
+  --padding-8: 24px;
+  --padding-9: 32px;
+  --gap-1: 2px;
+  --gap-2: 4px;
+  --gap-3: 6px;
+  --gap-4: 8px;
+  --gap-5: 12px;
+  --gap-6: 16px;
+  --gap-7: 20px;
+  --gap-8: 24px;
+  --gap-9: 32px;
+  --radius-mini: 2px;
+  --radius-small: 4px;
+  --radius-medium: 6px;
+  --radius-large: 8px;
+  --radius-xlarge: 12px;
+  --radius-xxlarge: 16px;
+  --radius-full: 40px;
+  --font-size-heading-small: 16px;
+  --font-size-heading-medium: 18px;
+  --font-size-heading-large: 20px;
+  --font-size-heading-xlarge: 24px;
+  --font-size-body-small: 13px;
+  --font-size-body-medium: 14px;
+  --font-size-body-large: 16px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+  --bg-primary-level1: var(--light-primary-500);
+  --bg-primary-level1-hover: var(--light-primary-600);
+  --bg-neutral-level1: var(--light-gray-100);
+  --bg-neutral-level1-hover: var(--light-gray-200);
+  --bg-neutral-level2: var(--light-gray-400);
+  --border-primary-level1: var(--light-primary-500);
+  --border-neutral-level1: var(--light-gray-200);
+  --border-status-negative: var(--red-500);
+  --border-status-positive: var(--green-500);
+  --border-status-information: var(--blue-500);
+  --border-neutral-level1-hover: var(--light-gray-400);
+  --border-neutral-level2: var(--light-gray-400);
+  --border-neutral-disabled: var(--light-gray-200);
+  --border-neutral-active: var(--light-gray-900);
+  --bg-neutral-surface: var(--light-gray-000);
+  --bg-neutral-surface-hover: var(--light-gray-100);
+  --bg-neutral-base: var(--light-gray-000);
+  --bg-neutral-base-hover: var(--light-gray-100);
+  --bg-neutral-disabled-checked: var(--light-gray-300);
+  --bg-status-negative: var(--red-500);
+  --bg-status-positive: var(--green-500);
+  --bg-status-information: var(--blue-500);
+  --icon-primary-level1: var(--light-primary-500);
+  --icon-neutral-level1: var(--light-gray-900);
+  --icon-status-negative: var(--red-500);
+  --icon-status-positive: var(--green-500);
+  --icon-status-information: var(--blue-500);
+  --icon-neutral-level2: var(--light-gray-700);
+  --icon-neutral-white: var(--light-gray-000);
+  --icon-neutral-inverse: var(--light-gray-000);
+  --icon-neutral-disabled: var(--light-gray-400);
+  --text-primary-base: var(--light-primary-500);
+  --text-neutral-base: var(--light-gray-900);
+  --text-neutral-description: var(--light-gray-700);
+  --text-neutral-disabled: var(--light-gray-400);
+  --text-neutral-inverse: var(--light-gray-000);
+  --text-neutral-white: var(--light-gray-000);
+  --text-status-negative: var(--red-500);
+  --text-status-positive: var(--green-500);
+  --text-status-information: var(--blue-500);
+  --btn-bg-primary-base: var(--bg-primary-level1);
+  --btn-bg-primary-hover: var(--bg-primary-level1-hover);
+  --btn-border-primary: var(--border-primary-level1);
+  --btn-border-normal: var(--border-neutral-level2);
+  --btn-bg-normal-base: var(--bg-neutral-base);
+  --btn-bg-normal-hover: var(--bg-neutral-base-hover);
+  --btn-bg-error-base: var(--border-status-negative);
+  --btn-bg-error-hover: var(--border-status-negative);
+  --btn-text-primary: var(--text-primary-base);
+  --btn-text-normal: var(--text-neutral-base);
+  --btn-text-disabled: var(--text-neutral-disabled);
+  --btn-text-error: var(--text-status-negative);
+  --btn-text-inverse: var(--text-neutral-inverse);
+  --btn-text-white: var(--text-neutral-white);
+  --input-bg-base: var(--bg-neutral-base);
+  --input-bg-disabled: var(--bg-neutral-level1);
+  --input-border-base: var(--border-neutral-level1);
+  --input-border-hover: var(--border-neutral-level1-hover);
+  --input-border-active: var(--border-neutral-active);
+  --input-border-error: var(--border-status-negative);
+  --input-text-normal: var(--text-neutral-base);
+  --input-text-disabled: var(--text-neutral-disabled);
+  --input-text-error: var(--text-status-negative);
+  --control-bg-primary: var(--bg-primary-level1);
+  --control-bg-normal: var(--bg-neutral-surface);
+  --control-bg-disabled: var(--bg-neutral-level1);
+  --control-bg-disabled-checked: var(--bg-neutral-disabled-checked);
+  --control-border-primary: var(--border-primary-level1);
+  --control-border-level1: var(--border-neutral-level1);
+  --control-border-level1-hover: var(--border-neutral-level1-hover);
+  --control-border-disabled: var(--border-neutral-disabled);
+  --control-text-normal: var(--text-neutral-base);
+  --control-text-disabled: var(--text-neutral-disabled);
+  --input-icon-normal: var(--icon-neutral-level1);
+  --input-icon-disabled: var(--icon-neutral-disabled);
+  --control-icon-primary: var(--icon-primary-level1);
+  --control-icon-normal: var(--icon-neutral-level1);
+  --control-icon-white: var(--icon-neutral-white);
+  --control-icon-inverse: var(--icon-neutral-inverse);
+  --control-icon-disabled: var(--icon-neutral-disabled);
+  --toggle-bg-primary: var(--bg-primary-level1);
+  --toggle-bg-normal: var(--bg-neutral-level1);
+  --toggle-bg-disabled: var(--bg-neutral-level2);
+  --toggle-bg-disabled-checked: var(--bg-neutral-disabled-checked);
+  --toggle-text-normal: var(--text-neutral-base);
+  --toggle-text-disabled: var(--text-neutral-disabled);
+  --toggle-icon-inverse: var(--icon-neutral-inverse);
+  --toggle-icon-white: var(--icon-neutral-white);
+}
+
+/* ========================================= */
+/* ATOMIC VARIABLES (Base Layer) */
+/* Theme-specific values that override :root */
+/* ========================================= */
+
+/* Collection: pimitive-token */
+[data-pimitive-token="Mode-1"] {
+  --light-primary-100: rgb(191, 227, 232);
+  --light-primary-200: rgb(140, 217, 227);
+  --light-primary-300: rgb(92, 207, 222);
+  --light-primary-400: rgb(41, 189, 212);
+  --light-primary-500: rgb(8, 166, 191);
+  --light-primary-600: rgb(5, 143, 166);
+  --light-primary-700: rgb(0, 84, 97);
+  --light-primary-800: rgb(5, 59, 66);
+  --light-primary-900: rgb(10, 38, 43);
+  --light-gray-000: rgb(255, 255, 255);
+  --light-gray-100: rgb(230, 237, 245);
+  --light-gray-200: rgb(201, 214, 224);
+  --light-gray-300: rgb(189, 204, 217);
+  --light-gray-400: rgb(168, 186, 204);
+  --light-gray-500: rgb(138, 158, 179);
+  --light-gray-600: rgb(107, 125, 143);
+  --light-gray-700: rgb(89, 105, 122);
+  --light-gray-800: rgb(66, 77, 89);
+  --light-gray-900: rgb(46, 54, 59);
+  --dark-primary-100: rgb(10, 38, 43);
+  --dark-primary-200: rgb(5, 59, 66);
+  --dark-primary-300: rgb(0, 84, 97);
+  --dark-primary-400: rgb(5, 143, 166);
+  --dark-primary-500: rgb(8, 166, 191);
+  --dark-primary-600: rgb(41, 189, 212);
+  --dark-primary-700: rgb(92, 207, 222);
+  --dark-primary-800: rgb(140, 217, 227);
+  --dark-primary-900: rgb(191, 227, 232);
+  --dark-gray-000: rgb(23, 23, 28);
+  --dark-gray-100: rgb(38, 38, 41);
+  --dark-gray-200: rgb(51, 54, 59);
+  --dark-gray-300: rgb(61, 66, 71);
+  --dark-gray-400: rgb(77, 82, 87);
+  --dark-gray-500: rgb(92, 99, 110);
+  --dark-gray-600: rgb(120, 125, 135);
+  --dark-gray-700: rgb(140, 148, 161);
+  --dark-gray-800: rgb(173, 184, 196);
+  --dark-gray-900: rgb(232, 232, 232);
+  --green-100: rgb(138, 252, 189);
+  --green-200: rgb(69, 232, 140);
+  --green-300: rgb(41, 230, 125);
+  --green-400: rgb(18, 219, 107);
+  --green-500: rgb(3, 199, 89);
+  --green-600: rgb(3, 181, 82);
+  --green-700: rgb(5, 156, 71);
+  --green-800: rgb(0, 125, 56);
+  --green-900: rgb(3, 82, 36);
+  --blue-100: rgb(207, 227, 255);
+  --blue-200: rgb(158, 196, 255);
+  --blue-300: rgb(110, 168, 255);
+  --blue-400: rgb(61, 140, 252);
+  --blue-500: rgb(13, 110, 252);
+  --blue-600: rgb(10, 89, 201);
+  --blue-700: rgb(8, 66, 153);
+  --blue-800: rgb(5, 43, 102);
+  --blue-900: rgb(3, 23, 51);
+  --indigo-100: rgb(224, 207, 252);
+  --indigo-200: rgb(194, 158, 250);
+  --indigo-300: rgb(163, 112, 247);
+  --indigo-400: rgb(133, 64, 245);
+  --indigo-500: rgb(102, 15, 242);
+  --indigo-600: rgb(82, 13, 194);
+  --indigo-700: rgb(61, 10, 145);
+  --indigo-800: rgb(41, 5, 97);
+  --indigo-900: rgb(20, 3, 48);
+  --red-100: rgb(255, 227, 230);
+  --red-200: rgb(242, 173, 181);
+  --red-300: rgb(235, 135, 143);
+  --red-400: rgb(227, 92, 107);
+  --red-500: rgb(219, 54, 69);
+  --red-600: rgb(176, 41, 56);
+  --red-700: rgb(133, 33, 41);
+  --red-800: rgb(89, 20, 28);
+  --red-900: rgb(43, 10, 13);
+}
+
+/* Collection: semantic-token */
+[data-semantic-token="light-mode"] {
+  --height-1: 8px;
+  --height-2: 16px;
+  --height-3: 20px;
+  --height-4: 24px;
+  --height-5: 32px;
+  --height-6: 40px;
+  --height-7: 48px;
+  --height-8: 56px;
+  --height-9: 64px;
+  --padding-1: 2px;
+  --padding-2: 4px;
+  --padding-3: 6px;
+  --padding-4: 8px;
+  --padding-5: 12px;
+  --padding-6: 16px;
+  --padding-7: 20px;
+  --padding-8: 24px;
+  --padding-9: 32px;
+  --gap-1: 2px;
+  --gap-2: 4px;
+  --gap-3: 6px;
+  --gap-4: 8px;
+  --gap-5: 12px;
+  --gap-6: 16px;
+  --gap-7: 20px;
+  --gap-8: 24px;
+  --gap-9: 32px;
+  --radius-mini: 2px;
+  --radius-small: 4px;
+  --radius-medium: 6px;
+  --radius-large: 8px;
+  --radius-xlarge: 12px;
+  --radius-xxlarge: 16px;
+  --radius-full: 40px;
+  --font-size-heading-small: 16px;
+  --font-size-heading-medium: 18px;
+  --font-size-heading-large: 20px;
+  --font-size-heading-xlarge: 24px;
+  --font-size-body-small: 13px;
+  --font-size-body-medium: 14px;
+  --font-size-body-large: 16px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+}
+
+[data-semantic-token="dark-mode"] {
+  --height-1: 8px;
+  --height-2: 16px;
+  --height-3: 20px;
+  --height-4: 24px;
+  --height-5: 32px;
+  --height-6: 40px;
+  --height-7: 48px;
+  --height-8: 56px;
+  --height-9: 64px;
+  --padding-1: 2px;
+  --padding-2: 4px;
+  --padding-3: 6px;
+  --padding-4: 8px;
+  --padding-5: 12px;
+  --padding-6: 16px;
+  --padding-7: 20px;
+  --padding-8: 24px;
+  --padding-9: 32px;
+  --gap-1: 2px;
+  --gap-2: 4px;
+  --gap-3: 6px;
+  --gap-4: 8px;
+  --gap-5: 12px;
+  --gap-6: 16px;
+  --gap-7: 20px;
+  --gap-8: 24px;
+  --gap-9: 32px;
+  --radius-mini: 2px;
+  --radius-small: 4px;
+  --radius-medium: 6px;
+  --radius-large: 8px;
+  --radius-xlarge: 12px;
+  --radius-xxlarge: 16px;
+  --radius-full: 40px;
+  --font-size-heading-small: 16px;
+  --font-size-heading-medium: 18px;
+  --font-size-heading-large: 20px;
+  --font-size-heading-xlarge: 24px;
+  --font-size-body-small: 13px;
+  --font-size-body-medium: 14px;
+  --font-size-body-large: 16px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+}
+
+[data-semantic-token="txt-medium-mode"] {
+  --height-1: 8px;
+  --height-2: 16px;
+  --height-3: 20px;
+  --height-4: 24px;
+  --height-5: 32px;
+  --height-6: 40px;
+  --height-7: 48px;
+  --height-8: 56px;
+  --height-9: 64px;
+  --padding-1: 2px;
+  --padding-2: 4px;
+  --padding-3: 6px;
+  --padding-4: 8px;
+  --padding-5: 12px;
+  --padding-6: 16px;
+  --padding-7: 20px;
+  --padding-8: 24px;
+  --padding-9: 32px;
+  --gap-1: 2px;
+  --gap-2: 4px;
+  --gap-3: 6px;
+  --gap-4: 8px;
+  --gap-5: 12px;
+  --gap-6: 16px;
+  --gap-7: 20px;
+  --gap-8: 24px;
+  --gap-9: 32px;
+  --radius-mini: 2px;
+  --radius-small: 4px;
+  --radius-medium: 6px;
+  --radius-large: 8px;
+  --radius-xlarge: 12px;
+  --radius-xxlarge: 16px;
+  --radius-full: 40px;
+  --font-size-heading-small: 17.6px;
+  --font-size-heading-medium: 19.8px;
+  --font-size-heading-large: 22px;
+  --font-size-heading-xlarge: 26.4px;
+  --font-size-body-small: 14.3px;
+  --font-size-body-medium: 15.4px;
+  --font-size-body-large: 17.6px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+}
+
+[data-semantic-token="txt-large-mode"] {
+  --height-1: 8px;
+  --height-2: 16px;
+  --height-3: 20px;
+  --height-4: 24px;
+  --height-5: 32px;
+  --height-6: 40px;
+  --height-7: 48px;
+  --height-8: 56px;
+  --height-9: 64px;
+  --padding-1: 2px;
+  --padding-2: 4px;
+  --padding-3: 6px;
+  --padding-4: 8px;
+  --padding-5: 12px;
+  --padding-6: 16px;
+  --padding-7: 20px;
+  --padding-8: 24px;
+  --padding-9: 32px;
+  --gap-1: 2px;
+  --gap-2: 4px;
+  --gap-3: 6px;
+  --gap-4: 8px;
+  --gap-5: 12px;
+  --gap-6: 16px;
+  --gap-7: 20px;
+  --gap-8: 24px;
+  --gap-9: 32px;
+  --radius-mini: 2px;
+  --radius-small: 4px;
+  --radius-medium: 6px;
+  --radius-large: 8px;
+  --radius-xlarge: 12px;
+  --radius-xxlarge: 16px;
+  --radius-full: 40px;
+  --font-size-heading-small: 19.2px;
+  --font-size-heading-medium: 21.6px;
+  --font-size-heading-large: 24px;
+  --font-size-heading-xlarge: 28.8px;
+  --font-size-body-small: 15.6px;
+  --font-size-body-medium: 16.8px;
+  --font-size-body-large: 19.2px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+}
+
+/* ========================================= */
+/* ALIAS VARIABLES (Semantic Layer) */
+/* ========================================= */
+
+/* Collection: semantic-token - Aliases */
+[data-semantic-token="light-mode"] {
+  --bg-primary-level1: var(--light-primary-500);
+  --bg-primary-level1-hover: var(--light-primary-600);
+  --bg-neutral-level1: var(--light-gray-100);
+  --bg-neutral-level1-hover: var(--light-gray-200);
+  --bg-neutral-level2: var(--light-gray-400);
+  --border-primary-level1: var(--light-primary-500);
+  --border-neutral-level1: var(--light-gray-200);
+  --border-status-negative: var(--red-500);
+  --border-status-positive: var(--green-500);
+  --border-status-information: var(--blue-500);
+  --border-neutral-level1-hover: var(--light-gray-400);
+  --border-neutral-level2: var(--light-gray-400);
+  --border-neutral-disabled: var(--light-gray-200);
+  --border-neutral-active: var(--light-gray-900);
+  --bg-neutral-surface: var(--light-gray-000);
+  --bg-neutral-surface-hover: var(--light-gray-100);
+  --bg-neutral-base: var(--light-gray-000);
+  --bg-neutral-base-hover: var(--light-gray-100);
+  --bg-neutral-disabled-checked: var(--light-gray-300);
+  --bg-status-negative: var(--red-500);
+  --bg-status-positive: var(--green-500);
+  --bg-status-information: var(--blue-500);
+  --icon-primary-level1: var(--light-primary-500);
+  --icon-neutral-level1: var(--light-gray-900);
+  --icon-status-negative: var(--red-500);
+  --icon-status-positive: var(--green-500);
+  --icon-status-information: var(--blue-500);
+  --icon-neutral-level2: var(--light-gray-700);
+  --icon-neutral-white: var(--light-gray-000);
+  --icon-neutral-inverse: var(--light-gray-000);
+  --icon-neutral-disabled: var(--light-gray-400);
+  --text-primary-base: var(--light-primary-500);
+  --text-neutral-base: var(--light-gray-900);
+  --text-neutral-description: var(--light-gray-700);
+  --text-neutral-disabled: var(--light-gray-400);
+  --text-neutral-inverse: var(--light-gray-000);
+  --text-neutral-white: var(--light-gray-000);
+  --text-status-negative: var(--red-500);
+  --text-status-positive: var(--green-500);
+  --text-status-information: var(--blue-500);
+}
+
+[data-semantic-token="dark-mode"] {
+  --bg-primary-level1: var(--dark-primary-500);
+  --bg-primary-level1-hover: var(--dark-primary-500);
+  --bg-neutral-level1: var(--dark-gray-200);
+  --bg-neutral-level1-hover: var(--dark-gray-300);
+  --bg-neutral-level2: var(--dark-gray-200);
+  --border-primary-level1: var(--dark-primary-500);
+  --border-neutral-level1: var(--dark-gray-400);
+  --border-status-negative: var(--red-500);
+  --border-status-positive: var(--green-500);
+  --border-status-information: var(--blue-500);
+  --border-neutral-level1-hover: var(--dark-gray-600);
+  --border-neutral-level2: var(--dark-gray-600);
+  --border-neutral-disabled: var(--dark-gray-400);
+  --border-neutral-active: var(--dark-gray-900);
+  --bg-neutral-surface: var(--dark-gray-100);
+  --bg-neutral-surface-hover: var(--dark-gray-200);
+  --bg-neutral-base: var(--dark-gray-000);
+  --bg-neutral-base-hover: var(--dark-gray-100);
+  --bg-neutral-disabled-checked: var(--dark-gray-400);
+  --bg-status-negative: var(--red-500);
+  --bg-status-positive: var(--green-600);
+  --bg-status-information: var(--blue-500);
+  --icon-primary-level1: var(--dark-primary-500);
+  --icon-neutral-level1: var(--dark-gray-900);
+  --icon-status-negative: var(--red-500);
+  --icon-status-positive: var(--green-500);
+  --icon-status-information: var(--blue-500);
+  --icon-neutral-level2: var(--dark-gray-700);
+  --icon-neutral-white: var(--dark-gray-900);
+  --icon-neutral-inverse: var(--dark-gray-000);
+  --icon-neutral-disabled: var(--dark-gray-400);
+  --text-primary-base: var(--dark-primary-500);
+  --text-neutral-base: var(--dark-gray-900);
+  --text-neutral-description: var(--dark-gray-700);
+  --text-neutral-disabled: var(--dark-gray-400);
+  --text-neutral-inverse: var(--dark-gray-000);
+  --text-neutral-white: var(--dark-gray-900);
+  --text-status-negative: var(--red-500);
+  --text-status-positive: var(--green-500);
+  --text-status-information: var(--blue-500);
+}
+
+[data-semantic-token="txt-medium-mode"] {
+  --bg-primary-level1: var(--light-primary-500);
+  --bg-primary-level1-hover: var(--light-primary-600);
+  --bg-neutral-level1: var(--light-gray-100);
+  --bg-neutral-level1-hover: var(--light-gray-200);
+  --bg-neutral-level2: var(--light-gray-400);
+  --border-primary-level1: var(--light-primary-500);
+  --border-neutral-level1: var(--light-gray-200);
+  --border-status-negative: var(--red-500);
+  --border-status-positive: var(--green-500);
+  --border-status-information: var(--blue-500);
+  --border-neutral-level1-hover: var(--light-gray-400);
+  --border-neutral-level2: var(--light-gray-400);
+  --border-neutral-disabled: var(--light-gray-200);
+  --border-neutral-active: var(--light-gray-900);
+  --bg-neutral-surface: var(--light-gray-000);
+  --bg-neutral-surface-hover: var(--light-gray-100);
+  --bg-neutral-base: var(--light-gray-000);
+  --bg-neutral-base-hover: var(--light-gray-100);
+  --bg-neutral-disabled-checked: var(--light-gray-300);
+  --bg-status-negative: var(--red-500);
+  --bg-status-positive: var(--green-500);
+  --bg-status-information: var(--blue-500);
+  --icon-primary-level1: var(--light-primary-500);
+  --icon-neutral-level1: var(--light-gray-900);
+  --icon-status-negative: var(--red-500);
+  --icon-status-positive: var(--green-500);
+  --icon-status-information: var(--blue-500);
+  --icon-neutral-level2: var(--light-gray-700);
+  --icon-neutral-white: var(--light-gray-000);
+  --icon-neutral-inverse: var(--light-gray-000);
+  --icon-neutral-disabled: var(--light-gray-400);
+  --text-primary-base: var(--light-primary-500);
+  --text-neutral-base: var(--light-gray-900);
+  --text-neutral-description: var(--light-gray-700);
+  --text-neutral-disabled: var(--light-gray-400);
+  --text-neutral-inverse: var(--light-gray-000);
+  --text-neutral-white: var(--light-gray-000);
+  --text-status-negative: var(--red-500);
+  --text-status-positive: var(--green-500);
+  --text-status-information: var(--blue-500);
+}
+
+[data-semantic-token="txt-large-mode"] {
+  --bg-primary-level1: var(--light-primary-500);
+  --bg-primary-level1-hover: var(--light-primary-600);
+  --bg-neutral-level1: var(--light-gray-100);
+  --bg-neutral-level1-hover: var(--light-gray-200);
+  --bg-neutral-level2: var(--light-gray-400);
+  --border-primary-level1: var(--light-primary-500);
+  --border-neutral-level1: var(--light-gray-200);
+  --border-status-negative: var(--red-500);
+  --border-status-positive: var(--green-500);
+  --border-status-information: var(--blue-500);
+  --border-neutral-level1-hover: var(--light-gray-400);
+  --border-neutral-level2: var(--light-gray-400);
+  --border-neutral-disabled: var(--light-gray-200);
+  --border-neutral-active: var(--light-gray-900);
+  --bg-neutral-surface: var(--light-gray-000);
+  --bg-neutral-surface-hover: var(--light-gray-100);
+  --bg-neutral-base: var(--light-gray-000);
+  --bg-neutral-base-hover: var(--light-gray-100);
+  --bg-neutral-disabled-checked: var(--light-gray-300);
+  --bg-status-negative: var(--red-500);
+  --bg-status-positive: var(--green-500);
+  --bg-status-information: var(--blue-500);
+  --icon-primary-level1: var(--light-primary-500);
+  --icon-neutral-level1: var(--light-gray-900);
+  --icon-status-negative: var(--red-500);
+  --icon-status-positive: var(--green-500);
+  --icon-status-information: var(--blue-500);
+  --icon-neutral-level2: var(--light-gray-700);
+  --icon-neutral-white: var(--light-gray-000);
+  --icon-neutral-inverse: var(--light-gray-000);
+  --icon-neutral-disabled: var(--light-gray-400);
+  --text-primary-base: var(--light-primary-500);
+  --text-neutral-base: var(--light-gray-900);
+  --text-neutral-description: var(--light-gray-700);
+  --text-neutral-disabled: var(--light-gray-400);
+  --text-neutral-inverse: var(--light-gray-000);
+  --text-neutral-white: var(--light-gray-000);
+  --text-status-negative: var(--red-500);
+  --text-status-positive: var(--green-500);
+  --text-status-information: var(--blue-500);
+}
+
+/* Collection: component-token - Aliases */
+[data-component-token="mint"] {
+  --btn-bg-primary-base: var(--bg-primary-level1);
+  --btn-bg-primary-hover: var(--bg-primary-level1-hover);
+  --btn-border-primary: var(--border-primary-level1);
+  --btn-border-normal: var(--border-neutral-level2);
+  --btn-bg-normal-base: var(--bg-neutral-base);
+  --btn-bg-normal-hover: var(--bg-neutral-base-hover);
+  --btn-bg-error-base: var(--border-status-negative);
+  --btn-bg-error-hover: var(--border-status-negative);
+  --btn-text-primary: var(--text-primary-base);
+  --btn-text-normal: var(--text-neutral-base);
+  --btn-text-disabled: var(--text-neutral-disabled);
+  --btn-text-error: var(--text-status-negative);
+  --btn-text-inverse: var(--text-neutral-inverse);
+  --btn-text-white: var(--text-neutral-white);
+  --input-bg-base: var(--bg-neutral-base);
+  --input-bg-disabled: var(--bg-neutral-level1);
+  --input-border-base: var(--border-neutral-level1);
+  --input-border-hover: var(--border-neutral-level1-hover);
+  --input-border-active: var(--border-neutral-active);
+  --input-border-error: var(--border-status-negative);
+  --input-text-normal: var(--text-neutral-base);
+  --input-text-disabled: var(--text-neutral-disabled);
+  --input-text-error: var(--text-status-negative);
+  --control-bg-primary: var(--bg-primary-level1);
+  --control-bg-normal: var(--bg-neutral-surface);
+  --control-bg-disabled: var(--bg-neutral-level1);
+  --control-bg-disabled-checked: var(--bg-neutral-disabled-checked);
+  --control-border-primary: var(--border-primary-level1);
+  --control-border-level1: var(--border-neutral-level1);
+  --control-border-level1-hover: var(--border-neutral-level1-hover);
+  --control-border-disabled: var(--border-neutral-disabled);
+  --control-text-normal: var(--text-neutral-base);
+  --control-text-disabled: var(--text-neutral-disabled);
+  --input-icon-normal: var(--icon-neutral-level1);
+  --input-icon-disabled: var(--icon-neutral-disabled);
+  --control-icon-primary: var(--icon-primary-level1);
+  --control-icon-normal: var(--icon-neutral-level1);
+  --control-icon-white: var(--icon-neutral-white);
+  --control-icon-inverse: var(--icon-neutral-inverse);
+  --control-icon-disabled: var(--icon-neutral-disabled);
+  --toggle-bg-primary: var(--bg-primary-level1);
+  --toggle-bg-normal: var(--bg-neutral-level1);
+  --toggle-bg-disabled: var(--bg-neutral-level2);
+  --toggle-bg-disabled-checked: var(--bg-neutral-disabled-checked);
+  --toggle-text-normal: var(--text-neutral-base);
+  --toggle-text-disabled: var(--text-neutral-disabled);
+  --toggle-icon-inverse: var(--icon-neutral-inverse);
+  --toggle-icon-white: var(--icon-neutral-white);
+}
+
+[data-component-token="blue"] {
+  --btn-bg-primary-base: var(--blue-500);
+  --btn-bg-primary-hover: var(--blue-600);
+  --btn-border-primary: var(--blue-500);
+  --btn-border-normal: var(--border-neutral-level2);
+  --btn-bg-normal-base: var(--bg-neutral-base);
+  --btn-bg-normal-hover: var(--bg-neutral-base-hover);
+  --btn-bg-error-base: var(--border-status-negative);
+  --btn-bg-error-hover: var(--border-status-negative);
+  --btn-text-primary: var(--blue-500);
+  --btn-text-normal: var(--text-neutral-base);
+  --btn-text-disabled: var(--text-neutral-disabled);
+  --btn-text-error: var(--text-status-negative);
+  --btn-text-inverse: var(--text-neutral-inverse);
+  --btn-text-white: var(--text-neutral-white);
+  --input-bg-base: var(--bg-neutral-base);
+  --input-bg-disabled: var(--bg-neutral-level1);
+  --input-border-base: var(--border-neutral-level1);
+  --input-border-hover: var(--border-neutral-level1-hover);
+  --input-border-active: var(--border-neutral-active);
+  --input-border-error: var(--border-status-negative);
+  --input-text-normal: var(--text-neutral-base);
+  --input-text-disabled: var(--text-neutral-disabled);
+  --input-text-error: var(--text-status-negative);
+  --control-bg-primary: var(--blue-500);
+  --control-bg-normal: var(--bg-neutral-surface);
+  --control-bg-disabled: var(--bg-neutral-level1);
+  --control-bg-disabled-checked: var(--bg-neutral-disabled-checked);
+  --control-border-primary: var(--blue-500);
+  --control-border-level1: var(--border-neutral-level1);
+  --control-border-level1-hover: var(--border-neutral-level1-hover);
+  --control-border-disabled: var(--border-neutral-disabled);
+  --control-text-normal: var(--text-neutral-base);
+  --control-text-disabled: var(--text-neutral-disabled);
+  --input-icon-normal: var(--icon-neutral-level1);
+  --input-icon-disabled: var(--icon-neutral-disabled);
+  --control-icon-primary: var(--blue-500);
+  --control-icon-normal: var(--icon-neutral-level1);
+  --control-icon-white: var(--icon-neutral-white);
+  --control-icon-inverse: var(--icon-neutral-inverse);
+  --control-icon-disabled: var(--icon-neutral-disabled);
+  --toggle-bg-primary: var(--blue-500);
+  --toggle-bg-normal: var(--bg-neutral-level1);
+  --toggle-bg-disabled: var(--bg-neutral-level2);
+  --toggle-bg-disabled-checked: var(--bg-neutral-disabled-checked);
+  --toggle-text-normal: var(--text-neutral-base);
+  --toggle-text-disabled: var(--text-neutral-disabled);
+  --toggle-icon-inverse: var(--icon-neutral-inverse);
+  --toggle-icon-white: var(--icon-neutral-white);
+}
+
+[data-component-token="indigo"] {
+  --btn-bg-primary-base: var(--indigo-500);
+  --btn-bg-primary-hover: var(--indigo-500);
+  --btn-border-primary: var(--indigo-500);
+  --btn-border-normal: var(--border-neutral-level2);
+  --btn-bg-normal-base: var(--bg-neutral-base);
+  --btn-bg-normal-hover: var(--bg-neutral-base-hover);
+  --btn-bg-error-base: var(--border-status-negative);
+  --btn-bg-error-hover: var(--border-status-negative);
+  --btn-text-primary: var(--indigo-500);
+  --btn-text-normal: var(--text-neutral-base);
+  --btn-text-disabled: var(--text-neutral-disabled);
+  --btn-text-error: var(--text-status-negative);
+  --btn-text-inverse: var(--text-neutral-inverse);
+  --btn-text-white: var(--text-neutral-white);
+  --input-bg-base: var(--bg-neutral-base);
+  --input-bg-disabled: var(--bg-neutral-level1);
+  --input-border-base: var(--border-neutral-level1);
+  --input-border-hover: var(--border-neutral-level1-hover);
+  --input-border-active: var(--border-neutral-active);
+  --input-border-error: var(--border-status-negative);
+  --input-text-normal: var(--text-neutral-base);
+  --input-text-disabled: var(--text-neutral-disabled);
+  --input-text-error: var(--text-status-negative);
+  --control-bg-primary: var(--indigo-500);
+  --control-bg-normal: var(--bg-neutral-surface);
+  --control-bg-disabled: var(--bg-neutral-level1);
+  --control-bg-disabled-checked: var(--bg-neutral-disabled-checked);
+  --control-border-primary: var(--indigo-500);
+  --control-border-level1: var(--border-neutral-level1);
+  --control-border-level1-hover: var(--border-neutral-level1-hover);
+  --control-border-disabled: var(--border-neutral-disabled);
+  --control-text-normal: var(--text-neutral-base);
+  --control-text-disabled: var(--text-neutral-disabled);
+  --input-icon-normal: var(--icon-neutral-level1);
+  --input-icon-disabled: var(--icon-neutral-disabled);
+  --control-icon-primary: var(--indigo-500);
+  --control-icon-normal: var(--icon-neutral-level1);
+  --control-icon-white: var(--icon-neutral-white);
+  --control-icon-inverse: var(--icon-neutral-inverse);
+  --control-icon-disabled: var(--icon-neutral-disabled);
+  --toggle-bg-primary: var(--indigo-500);
+  --toggle-bg-normal: var(--bg-neutral-level1);
+  --toggle-bg-disabled: var(--bg-neutral-level2);
+  --toggle-bg-disabled-checked: var(--bg-neutral-disabled-checked);
+  --toggle-text-normal: var(--text-neutral-base);
+  --toggle-text-disabled: var(--text-neutral-disabled);
+  --toggle-icon-inverse: var(--icon-neutral-inverse);
+  --toggle-icon-white: var(--icon-neutral-white);
+}
+
+/* ========================================= */
+/* USAGE EXAMPLES */
+/* ========================================= */
+
+/*
+DYNAMIC MODE SWITCHING:
+
+<!-- pimitive-token Collection -->
+<div data-pimitive-token="Mode-1">Content in Mode 1 mode</div>
+
+<!-- semantic-token Collection -->
+<div data-semantic-token="light-mode">Content in light-mode mode</div>
+<div data-semantic-token="dark-mode">Content in dark-mode mode</div>
+<div data-semantic-token="txt-medium-mode">Content in txt-medium-mode mode</div>
+<div data-semantic-token="txt-large-mode">Content in txt-large-mode mode</div>
+
+<!-- component-token Collection -->
+<div data-component-token="mint">Content in mint mode</div>
+<div data-component-token="blue">Content in blue mode</div>
+<div data-component-token="indigo">Content in indigo mode</div>
+
+MULTI-MODE SWITCHING:
+<div data-theme="light" data-size="large" data-prominence="primary">
+  Content with multiple mode attributes
+</div>
+
+VARIABLE USAGE IN CSS:
+.my-component {
+  color: var(--light-primary-100);
+  color: var(--light-primary-200);
+  color: var(--light-primary-300);
+}
+*/
+
+/* CSS Custom Property Validation */
+@supports (color: var(--test)) {
+  /* Modern browsers with CSS custom property support */
+  .css-variables-supported {
+    display: block;
+  }
+}
+
+@supports not (color: var(--test)) {
+  /* Fallback for older browsers */
+  .css-variables-not-supported {
+    display: block;
+  }
+  .css-variables-supported {
+    display: none;
+  }
+}
