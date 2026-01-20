@@ -8,13 +8,13 @@ type StatCardProps = {
 
 function StatCard({ value, label }: StatCardProps) {
   return (
-    <div className="bg-bg-neutral-base flex flex-[1_0_0] flex-col min-h-px min-w-px overflow-clip relative">
-      <div className="flex items-center justify-between overflow-clip px-5 py-6 relative shrink-0 w-full">
-        <div className="flex flex-col items-center justify-center leading-[1.5] not-italic relative shrink-0 text-text-neutral-base whitespace-pre-wrap">
+    <div className="bg-bg-neutral-base flex flex-[1_0_0] flex-col min-h-px min-w-px overflow-clip relative rounded-radius-xlarge">
+      <div className="flex gap-[var(--padding-5)] items-center overflow-clip px-5 py-6 relative shrink-0 w-full">
+        <div className="bg-bg-neutral-level1 rounded-radius-medium shrink-0 size-12" />
+        <div className="flex flex-[1_0_0] flex-col items-start justify-center leading-[1.5] min-h-px min-w-px not-italic relative text-text-neutral-base whitespace-pre-wrap">
           <p className="font-pretendard text-typo-heading-medium relative shrink-0 w-[192px]">{value}</p>
           <p className="font-pretendard text-typo-body-small-regular relative shrink-0 w-[192px]">{label}</p>
         </div>
-        <div className="bg-bg-neutral-level1 rounded-radius-medium shrink-0 size-12" />
       </div>
       <div className="border-border-neutral-level1 border-solid border-t flex items-center justify-between overflow-clip pl-5 pr-3 py-[10px] relative shrink-0 w-full">
         <p className="font-pretendard text-typo-body-small-regular leading-[1.5] not-italic relative shrink-0 text-text-neutral-base">
@@ -35,7 +35,7 @@ type NewsCardProps = {
 
 function NewsCard({ title, content }: NewsCardProps) {
   return (
-    <div className="bg-bg-neutral-base flex flex-[1_0_0] flex-col h-[280px] items-start min-h-px min-w-px overflow-clip relative">
+    <div className="bg-bg-neutral-base flex flex-[1_0_0] flex-col h-[280px] items-start min-h-px min-w-px overflow-clip relative rounded-radius-xlarge">
       <div className="bg-bg-neutral-level1 flex items-center justify-center overflow-clip px-5 py-10 relative shrink-0 w-full">
         <div className="relative shrink-0 size-[52px] text-icon-neutral-disabled">
           <PhotoIcon />
