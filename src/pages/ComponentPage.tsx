@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button, Toggle, Input, Select, Checkbox, Radio, Search, Toast, useToast } from "../components";
+import { Button, Toggle, Input, Select, Checkbox, Radio, Search, Dropdown, Toast, useToast } from "../components";
 
 export default function ComponentPage() {
   const [toggle1, setToggle1] = useState(false);
@@ -15,6 +15,8 @@ export default function ComponentPage() {
   const [radioValue, setRadioValue] = useState("option1");
   const [radioDisabledValue, setRadioDisabledValue] = useState("option1");
   const [searchValue, setSearchValue] = useState("");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownSelected, setDropdownSelected] = useState<string[]>([]);
   const { showToast } = useToast();
 
   return (
@@ -496,6 +498,67 @@ export default function ComponentPage() {
                   placeholder="검색어를 입력해주세요."
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dropdown Component Section */}
+      <section className="bg-bg-neutral-surface rounded-large shadow-xl p-8 mb-6">
+        <h2 className="font-pretendard text-typo-heading-medium text-text-neutral-base mb-6">
+          Dropdown Component
+        </h2>
+        
+        <div className="space-y-6">
+          <div>
+            <h3 className="font-pretendard text-typo-body-medium-bold text-text-neutral-base mb-4">
+              With Trigger Button
+            </h3>
+            <div className="flex flex-col gap-4">
+              <Dropdown
+                options={[
+                  { value: "customer", label: "고객사명" },
+                  { value: "task", label: "업무 유형" },
+                  { value: "manager", label: "담당자" },
+                  { value: "regDate", label: "등록일" },
+                  { value: "endDate", label: "종료일" },
+                ]}
+                selectedValues={dropdownSelected}
+                onSelectionChange={setDropdownSelected}
+                open={dropdownOpen}
+                onOpenChange={setDropdownOpen}
+                trigger={
+                  <Button variant="secondary">
+                    필터 선택 ({dropdownSelected.length})
+                  </Button>
+                }
+              />
+              {dropdownSelected.length > 0 && (
+                <div className="text-typo-body-small-regular text-text-neutral-description">
+                  선택된 항목: {dropdownSelected.join(", ")}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-pretendard text-typo-body-medium-bold text-text-neutral-base mb-4">
+              Standalone (Always Open)
+            </h3>
+            <div className="flex flex-col gap-4">
+              <Dropdown
+                options={[
+                  { value: "customer", label: "고객사명" },
+                  { value: "task", label: "업무 유형" },
+                  { value: "manager", label: "담당자" },
+                  { value: "regDate", label: "등록일" },
+                  { value: "endDate", label: "종료일" },
+                ]}
+                selectedValues={["customer", "task"]}
+                onSelectionChange={(values: string[]) => console.log("Selected:", values)}
+                open={true}
+                onOpenChange={() => {}}
+              />
             </div>
           </div>
         </div>

@@ -17,9 +17,9 @@ const CheckIcon = ({ disabled }: { disabled?: boolean }) => (
     className="absolute inset-0"
   >
     <path
-      d="M3 8L6 11L13 4"
-      stroke={disabled ? "currentColor" : "white"}
-      strokeWidth="2"
+      d="M4 8L7 11L12 5"
+      stroke={disabled ? "#bdcbd9" : "white"}
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     />

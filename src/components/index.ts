@@ -19,6 +19,9 @@ export type { RadioProps } from "./Radio";
 export { default as Search } from "./Search";
 export type { SearchProps, SearchState } from "./Search";
 
+export { default as Dropdown } from "./Dropdown";
+export type { DropdownProps, DropdownOption } from "./Dropdown";
+
 export { default as Toast, Toast as ToastComponent } from "./Toast";
 export type { ToastProps, ToastType } from "./Toast";
 export { ToastProvider, useToast } from "./ToastProvider";
