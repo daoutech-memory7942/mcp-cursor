@@ -7,10 +7,10 @@ import {
 } from "../dashboard/icons";
 
 // Image URLs from Figma
-const imgTypeSizeM40X40 = "https://www.figma.com/api/mcp/asset/2083fe84-de09-4286-8fe5-47ba13bdcdf1";
-const imgEllipse1990 = "https://www.figma.com/api/mcp/asset/29abfbbc-4cc1-43f3-abb7-c0b5488ddfc7";
-const imgLogo1 = "https://www.figma.com/api/mcp/asset/66fdb374-6596-4f7a-bfaa-fd06a886f7be";
-const imgLogo2 = "https://www.figma.com/api/mcp/asset/8344a15f-f343-4f78-b027-c1b21826fb1b";
+const imgTypeSizeM40X40 = "https://www.figma.com/api/mcp/asset/371feffb-f5d9-44d8-8007-2d581a8a1a0c";
+const imgEllipse1990 = "https://www.figma.com/api/mcp/asset/5fa5697c-c9a5-4489-ae21-12e089bb4134";
+const imgLogo1 = "https://www.figma.com/api/mcp/asset/c446a293-6a59-42b3-8082-7f911e629342";
+const imgLogo2 = "https://www.figma.com/api/mcp/asset/a34b58de-346a-47ef-96fa-e1fd322c537d";
 
 type StatusMiniProps = {
   className?: string;
@@ -65,7 +65,7 @@ function Avatar({
     <div className={className}>
       <img className="block max-w-none size-full" alt="" height="40" src={imgTypeSizeM40X40} width="40" />
       {masterBadge && (
-        <Badge className="absolute bg-light-gray-900 content-stretch flex flex-col inset-[52.5%_-2.5%_-2.5%_52.5%] items-center justify-center rounded-radius-full" />
+        <Badge className="absolute bg-light-gray-900 content-stretch flex flex-col inset-[52.5%_-2.5%_-2.5%_52.5%] items-center justify-center rounded-full" />
       )}
       {statusBadge && <StatusMini className="absolute bottom-0 left-0 size-[8px]" />}
     </div>

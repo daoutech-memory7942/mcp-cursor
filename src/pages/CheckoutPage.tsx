@@ -30,7 +30,7 @@ export default function CheckoutPage() {
       }
     >
       {/* Checkout Form */}
-      <div className="bg-bg-neutral-base flex flex-col gap-6 items-start p-5 relative rounded-radius-large shrink-0 w-full">
+      <div className="bg-bg-neutral-base flex flex-col gap-6 items-start p-5 relative rounded-large shrink-0 w-full">
         <p className="font-pretendard text-typo-heading-xlarge leading-[1.5] not-italic relative shrink-0 text-text-neutral-base">
           Checkout
         </p>
