@@ -55,7 +55,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       <div
         className={cn(
           "content-stretch flex flex-col items-start relative w-full",
-          showError ? "gap-[var(--padding-2)]" : ""
+          showError ? "gap-[var(--padding-2)]" : "h-[var(--height-5)]"
         )}
       >
         <div
