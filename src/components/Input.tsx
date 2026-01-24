@@ -1,9 +1,10 @@
-import React, { InputHTMLAttributes, forwardRef } from "react";
+import React, { forwardRef } from "react";
+import type { InputHTMLAttributes } from "react";
 import { cn } from "../utils/cn";
 
 export type InputState = "normal" | "hover" | "error";
 
-export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, "onFocus" | "onBlur"> {
+export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   state?: InputState;
   errorMessage?: string;
   onStateChange?: (state: InputState) => void;

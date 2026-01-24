@@ -17,7 +17,7 @@ type StatusMiniProps = {
   status?: "online";
 };
 
-function StatusMini({ className, status = "online" }: StatusMiniProps) {
+function StatusMini({ className }: StatusMiniProps) {
   return (
     <div className={className}>
       <div className="absolute left-0 size-[8px] top-1/2 translate-y-[-50%]">
@@ -36,7 +36,7 @@ type BadgeProps = {
   size?: "M";
 };
 
-function Badge({ className, type = "Manager", color = "Black", size = "M" }: BadgeProps) {
+function Badge({ className }: BadgeProps) {
   return (
     <div className={className}>
       <div className="flex flex-[1_0_0] flex-col font-pretendard font-medium justify-center leading-[0] min-h-px min-w-px relative text-text-neutral-white text-xs text-center tracking-[-0.24px] w-[9px]">
@@ -58,8 +58,6 @@ function Avatar({
   className,
   masterBadge = true,
   statusBadge = true,
-  type = "김다우 사원",
-  size = "M(40x40)",
 }: AvatarProps) {
   return (
     <div className={className}>

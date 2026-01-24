@@ -1,9 +1,10 @@
-import React, { SelectHTMLAttributes, forwardRef } from "react";
+import React, { forwardRef } from "react";
+import type { SelectHTMLAttributes } from "react";
 import { cn } from "../utils/cn";
 
 export type SelectState = "normal" | "hover";
 
-export interface SelectProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>, "onFocus" | "onBlur"> {
+export interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   state?: SelectState;
   onStateChange?: (state: SelectState) => void;
   options?: Array<{ value: string; label: string }>;

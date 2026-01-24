@@ -110,9 +110,7 @@ const Dropdown = ({
                 <Checkbox
                   label={option.label}
                   checked={selectedValues.includes(option.value)}
-                  onChange={(checked) => {
-                    handleOptionToggle(option.value);
-                  }}
+                  onChange={() => handleOptionToggle(option.value)}
                   className="w-full"
                 />
               </div>
